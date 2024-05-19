@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#pieChart">Pie Chart</a></li>
+            <li><a href="#intensityChart">Intensity Chart</a></li>
+            <li><a href="#lineChart">Line Chart</a></li>
+        </ul>
+    </nav>
+    <div class="dashboard">
+        <div class="section">
+            <div id="intensityChartContainer">
+                <svg id="intensityChart"></svg>
+            </div>
+            <br>
+            <input type="range" id="volumeSeeker" min="1" max="48" value="10">
+            <label for="volumeSeeker">Limit</label>
+        </div>
+        <div class="section">
+            <div id="lineChartContainer">
+                <svg id="lineChart"></svg>
+            </div>
+            <br>
+            <input type="range" id="lineGraphLimitSeeker" min="1" max="48" value="10">
+            <label for="lineGraphLimitSeeker">Limit</label>
+        </div>
+        <div class="section">
+            <div id="pieChartContainer">
+                <svg id="pieChart"></svg>
+            </div>
+        </div>
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
