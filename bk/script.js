@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let widthPerBar = 100; // Fixed width per bar
         let maxBars = 2500 / widthPerBar; // Maximum number of bars to fit within 2500 width
         let width = Math.min(2500, labels.length * widthPerBar); // Calculate width based on number of bars and fixed width per bar
-        const height = 1000 - margin.top - margin.bottom;
+        const height = 500 - margin.top - margin.bottom;
 
         const limitedLabels = labels.slice(0, initialLimit); // Limit labels to initial limit
 
@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function createLineGraph(title, labels, data, chartId, initialLimit) {
         const margin = { top: 20, right: 30, bottom: 30, left: 40 };
         let width = 2500 - margin.left - margin.right;
-        const height = 1000 - margin.top - margin.bottom;
+        const height = 500 - margin.top - margin.bottom;
 
         const limitedLabels = labels.slice(0, initialLimit); // Limit labels to initial limit
 
